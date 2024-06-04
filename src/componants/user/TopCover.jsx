@@ -6,7 +6,7 @@ export default function TopCover({data}){
   
 
     return (
-        <div className="flex flex-col justify-center relative ">
+        <div className="flex flex-col justify-center relative  bg-gray-100">
             <img className="object-contain" src={cover} alt="cover" />
                 <div className="flex items-center mb-10">
                 <img  className="w-20 h-20 ml-5 object-cover rounded-full absolute " src={avatar} alt="picture" />

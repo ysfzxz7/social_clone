@@ -1,10 +1,17 @@
+import Photos from "./Photos";
 import TopCover from "./TopCover";
 
 export default function User(){
 
     return (
-        <div className="p-5 bg-gray-100 lg:w-8/12 md:w-10/12 m-auto ">
+        <div className="p-5 lg:w-8/12 md:w-10/12 m-auto space-y-2 ">
             <TopCover data={userData} />
+            <div className="flex  space-x-2">
+              <div className="w-5/12 border">
+                <Photos />
+              </div>
+              <div className="w-7/12 border ">right</div>
+            </div>
         </div>
     )
 }
