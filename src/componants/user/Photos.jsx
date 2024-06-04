@@ -1,7 +1,7 @@
 export default function Photos() {
 
   return (
-    <div className="p-5 space-y-2">
+    <div className="p-5 space-y-2 bg-white">
       <div className="flex justify-between items-center  ">
         <h1>Photos</h1>
         <h1 className="text-xs">See More Photos</h1>
@@ -9,8 +9,8 @@ export default function Photos() {
       <div>
         <ul className="grid grid-cols-3 gap-1">
           {userPhotos.map((photos) => (
-            <li  key={photos.id}>
-              <img className="h-28 w-24 object-cover " src={photos.url} alt={photos.description} srcset="" />
+            <li className="" key={photos.id}>
+              <img className="  object-cover h-28 w-24 hover:object-right-top transition-all duration-500" src={photos.url} alt={photos.description} srcset="" />
             </li>
           ))}
         </ul>

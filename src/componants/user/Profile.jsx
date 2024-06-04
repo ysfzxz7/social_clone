@@ -1,16 +1,27 @@
+import Post from "../Middlepage/Post"
+import Intro from "./Intro";
 import Photos from "./Photos";
 import TopCover from "./TopCover";
+import YourFriend from "./YourFriend";
 
 export default function User(){
 
     return (
         <div className="p-5 lg:w-8/12 md:w-10/12 m-auto space-y-2 ">
             <TopCover data={userData} />
-            <div className="flex  space-x-2">
-              <div className="w-5/12 border">
+            <div className="flex  space-x-2 bg-gray-100 p-2">
+              <div className="w-5/12 bg-gray-100 space-y-2 ">
+                <Intro data={userData} />
                 <Photos />
+                <YourFriend />
               </div>
-              <div className="w-7/12 border ">right</div>
+              <div className="w-7/12  space-y-2 bg-gray-100">
+                
+                <Post />
+                <Post />
+                <Post />
+                <Post />
+              </div>
             </div>
         </div>
     )
@@ -27,23 +38,6 @@ const userData = {
     cover: 'https://timelinecovers.pro/facebook-cover/download/cute-birds-facebook-cover.jpg',
     avatar: "https://lumiere-a.akamaihd.net/v1/images/a_avatarpandorapedia_kiri_16x9_1098_04_39d940d1.jpeg?region=0%2C0%2C1920%2C1080",
     hobbies: ["Reading", "Traveling"],
-    friends: [
-      {
-        id: 2,
-        name: "Alice Thompson",
-        avatar: "https://example.com/avatar2.jpg"
-      },
-      {
-        id: 3,
-        name: "Mark Smith",
-        avatar: "https://example.com/avatar3.jpg"
-      },
-      {
-        id: 4,
-        name: "Emily Johnson",
-        avatar: "https://example.com/avatar4.jpg"
-      }
-    ],
     posts: [
       {
         id: 1,
