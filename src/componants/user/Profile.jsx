@@ -3,7 +3,7 @@ import TopCover from "./TopCover";
 export default function User(){
 
     return (
-        <div className="p-5 bg-gray-100 w-10/12 m-auto ">
+        <div className="p-5 bg-gray-100 lg:w-8/12 md:w-10/12 m-auto ">
             <TopCover data={userData} />
         </div>
     )
