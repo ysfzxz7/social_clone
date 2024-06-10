@@ -5,17 +5,17 @@ export default function Write(){
 
 
     return (
-        <div className="bg-white  p-3 space-y-4">
-            <div className="flex justify-between items-start" >
-                <img className="w-14  rounded-full" src="https://hips.hearstapps.com/hmg-prod/images/best-sunscreen-for-face-65ca1fc577210.jpg?crop=1.00xw:0.874xh;0,0&resize=1200:*" alt="" srcset="" />
-                <input className="bg-gray-100 w-10/12 p-2 h-20" placeholder="what's in your mind" type="text" name="" id="" />
+        <div className="bg-white p-3 space-y-4">
+            <div className="flex justify-between items-start gap-2 lg:p-5 " >
+                <img className="w-16 rounded-full " src={img} alt="" srcset="" />
+                <input className="bg-gray-100 w-10/12 p-2 h-16 text-xs lg:text-sm" placeholder="what's in your mind" type="text" name="" id="" />
             </div>
-            <div  className="flex">
-                <ul className=" m-auto flex w-10/12 justify-between">
+            <div  className="flex flex-col space-y-2   lg:flex-row lg:items-center lg:justify-center">
+                <ul className="flex justify-around  lg:w-10/12 gap-1">
                     {state.map((ele)=>(
-                        <li className="flex items-center justify-center space-x-2 hover:bg-slate-100 p-3 cursor-pointer">
+                        <li className=" flex  text-xs  cursor-pointer items-center lg:text-sm gap-1">
                             {ele.icone}
-                            <h3>{ele.name}</h3>
+                            <h3 className="flex-1  line-clamp-1">{ele.name}</h3>
                         </li>
                     ))}
                 </ul>
@@ -42,3 +42,5 @@ const state = [
         icone: <IoIosHappy  color="blue"  />
     }
 ]
+
+const img = "https://hips.hearstapps.com/hmg-prod/images/best-sunscreen-for-face-65ca1fc577210.jpg?crop=1.00xw:0.874xh;0,0&resize=1200:*"

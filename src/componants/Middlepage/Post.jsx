@@ -13,8 +13,8 @@ export default function Post(){
                     <HiDotsVertical size={20} />
                 </button>
             </div>
-            <div>
-                <p className="text-sm ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque sunt, temporibus quibusdam aperiam vel vitae nesciunt ratione. Quia error provident modi repellendus iusto voluptatum delectus voluptatem possimus quae unde?</p>
+            <div className="">
+                <p className="text-sm py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam cumque sunt, temporibus quibusdam aperiam vel vitae nesciunt ratione. Quia error provident modi repellendus iusto voluptatum delectus voluptatem possimus quae unde?</p>
                 <img src="https://i.natgeofe.com/n/726708f7-f79d-47a5-ba03-711449823607/01-balance-of-nature_3x2.jpg?w=718&h=479" alt="" />
             </div>
             <div className="flex items-center py-2">

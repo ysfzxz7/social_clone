@@ -7,7 +7,7 @@ export default function Notifications(){
                 <div className="">
                     <ul className="space-y-2 px-5">
                         {notificationsData.map((notif)=>(
-                            <li className= {`${notif.read === false ? 'bg-gray-200' : 'bg-white'} px-3 py-2 cursor-pointer`}>
+                            <li className= {`${notif.read === false ? 'bg-gray-50' : 'bg-white'} px-3 py-2 cursor-pointer`}>
                                 <h1 className="text-xs font-bold">{notif.title}</h1>
                                 <h1 className="text-lg">{notif.message}</h1>
                                 <h1 className="text-gray-500 text-xs ">{notif.timestamp}</h1>

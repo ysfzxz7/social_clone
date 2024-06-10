@@ -1,4 +1,5 @@
 import Post from "../Middlepage/Post"
+import Write from "../Middlepage/Write";
 import Intro from "./Intro";
 import Photos from "./Photos";
 import TopCover from "./TopCover";
@@ -15,8 +16,8 @@ export default function User(){
                 <Photos />
                 <YourFriend />
               </div>
-              <div className="w-7/12  space-y-2 bg-gray-100">
-                
+              <div className="w-7/12  space-y-2 bg-gray-">
+                <Write />
                 <Post />
                 <Post />
                 <Post />

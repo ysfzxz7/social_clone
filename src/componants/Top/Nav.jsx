@@ -13,10 +13,7 @@ export default function Nav(){
         <div className="p-1 bg-blue-400 flex items-center justify-around sticky top-0 px-10 z-20 ">
             <h1 onClick={handleRefrech} className="font-extrabold text-2xl w-4/12 text-center cursor-pointer"><Link to={'/'}>Facebook</Link></h1>
             <input className="p-2 w-6/12 " type="text" placeholder="serach for someone"  />
-            <div className="flex justify-around w-2/12">
-                <h2>Homepage</h2>
-                <h2>Timeline</h2>
-            </div>
+            
             <div className="w-2/12 justify-around flex">
                 <Link to={'/notifications'}>
                 <FaBell size={20} color="white"  />

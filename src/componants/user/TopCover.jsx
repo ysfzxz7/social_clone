@@ -6,10 +6,10 @@ export default function TopCover({data}){
   
 
     return (
-        <div className="flex flex-col justify-center relative  bg-gray-100">
+        <div className="flex flex-col justify-center  bg-gray-100 ">
             <img className="object-contain" src={cover} alt="cover" />
-                <div className="flex items-center mb-10">
-                <img  className="w-20 h-20 ml-5 object-cover rounded-full absolute " src={avatar} alt="picture" />
+                <div className="flex items-center mb-10 relative">
+                    <img  className="w-20 h-20 ml-5 object-cover rounded-full absolute top-0 -translate-y-1/2" src={avatar} alt="picture" />
                     <div className="ml-32">
                         <h1 className="text-xl font-bold">{name}</h1>
                         <h1 className="text-xs">{bio}</h1>
